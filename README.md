@@ -135,9 +135,8 @@ sample_data/
 
 ## Explanation Video
 
-```
 Video explanation: <https://drive.google.com/file/d/1Wto_njJGrYdsWcGNCIAbVpt4xe8IV8uV/view?usp=drive_link>
-```
+
 ## Author
 
 Pritish Kumar Lenka
