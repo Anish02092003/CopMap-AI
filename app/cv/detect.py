@@ -1,17 +1,25 @@
 from ultralytics import YOLO
 
-model = YOLO("yolov8n.pt")
+model = None
+
+
+def get_model():
+    global model
+    if model is None:
+        model = YOLO("yolov8n.pt")
+    return model
 
 
 def analyze_frame(image_path: str):
-    results = model(image_path)
+    yolo_model = get_model()
+    results = yolo_model(image_path)
 
     people_count = 0
 
     for r in results:
         for box in r.boxes:
             cls = int(box.cls[0])
-            label = model.names[cls]
+            label = yolo_model.names[cls]
 
             if label == "person":
                 people_count += 1
