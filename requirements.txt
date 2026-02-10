@@ -6,4 +6,5 @@ sqlalchemy
 faiss-cpu
 sentence-transformers
 ultralytics
-openai
+torch
+numpy
