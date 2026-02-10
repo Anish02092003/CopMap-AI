@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pydantic
+python-multipart
+sqlalchemy
+faiss-cpu
+sentence-transformers
+ultralytics
+openai
