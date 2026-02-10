@@ -1,15 +1,22 @@
-from sentence_transformers import SentenceTransformer
 import faiss
 import numpy as np
+from sentence_transformers import SentenceTransformer
 
-model = SentenceTransformer("all-MiniLM-L6-v2")
-
+model = None
 index = faiss.IndexFlatL2(384)
 documents = []
 
 
+def get_model():
+    global model
+    if model is None:
+        model = SentenceTransformer("all-MiniLM-L6-v2")
+    return model
+
+
 def add_document(text: str):
-    embedding = model.encode([text])
+    m = get_model()
+    embedding = m.encode([text])
     index.add(np.array(embedding).astype("float32"))
     documents.append(text)
 
@@ -18,11 +25,10 @@ def search(query: str, k: int = 3):
     if len(documents) == 0:
         return []
 
-    embedding = model.encode([query])
-
+    m = get_model()
+    embedding = m.encode([query])
 
     k = min(k, len(documents))
-
     D, I = index.search(np.array(embedding).astype("float32"), k)
 
     results = []
