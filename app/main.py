@@ -13,6 +13,7 @@ from app.alerts.suspicious import detect_suspicious
 
 
 from pydantic import BaseModel
+os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 
 
 app = FastAPI(title="CopMap AI Patrol Intelligence")
