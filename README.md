@@ -79,15 +79,11 @@ POST /detect
 ![Architecture](docs/sample1output.png)
 
 POST /patrol-log
-{
-  "message": "Patrol log stored",
-  "id": 7
-}
+![Architecture](docs/sample2output.png)
+![Architecture](docs/sample3output.png)
 
 GET /intelligence-summary
-{
-  "summary": "Patrol Intelligence Summary:\n- Crowd gathering before cricket match\n- Festival shopping crowd increasing\n\nRecommendation: Increase monitoring in frequently crowded areas."
-}
+![Architecture](docs/sample4output.png)
 
 ---
 
