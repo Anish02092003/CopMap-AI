@@ -139,7 +139,10 @@ Video explanation: <https://drive.google.com/file/d/1Wto_njJGrYdsWcGNCIAbVpt4xe8
 
 ## Deployed On Render
 
+https://copmap-ai.onrender.com
+For Swagger-
 https://copmap-ai.onrender.com/docs
+
 
 ## Author
 
