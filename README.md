@@ -137,6 +137,10 @@ sample_data/
 
 Video explanation: <https://drive.google.com/file/d/1Wto_njJGrYdsWcGNCIAbVpt4xe8IV8uV/view?usp=drive_link>
 
+## Deployed On Render
+
+https://copmap-ai.onrender.com/docs
+
 ## Author
 
 Pritish Kumar Lenka
