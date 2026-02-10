@@ -75,9 +75,19 @@ POST /patrol-log
 GET  /intelligence-summary
 
 ## Sample Outputs
+POST /detect
+![Architecture](docs/sample1output.png)
 
+POST /patrol-log
+{
+  "message": "Patrol log stored",
+  "id": 7
+}
 
-
+GET /intelligence-summary
+{
+  "summary": "Patrol Intelligence Summary:\n- Crowd gathering before cricket match\n- Festival shopping crowd increasing\n\nRecommendation: Increase monitoring in frequently crowded areas."
+}
 
 ---
 
@@ -129,26 +139,10 @@ sample_data/
 
 ## Explanation Video
 
-(Add your video link here)
-
 ```
 Video explanation: <link>
 ```
-
----
-
 ## Author
 
 Pritish Kumar Lenka
 
----
-
-Now you have a **submission-ready README structure**.
-
----
-
-Next step:
-We should generate your **5–10 minute explanation video script**, because that’s another thing evaluators care about a lot.
-
-Say:
-**“video script”**
